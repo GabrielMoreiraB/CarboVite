@@ -1,7 +1,25 @@
+@import '../../components/styles/variaveis';
 .menu{
-    padding: 20px 250px;
+    padding: 20px $padding-horizontal;
 }
 
 .logo{
     width: 100px;
+}
+
+.header{
+    background-image: url('header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0px $padding-horizontal;
+    &_text{
+        color: white;
+        font-size: 3em;
+        min-width: 400px;
+        width: 40%;
+    }
 }
