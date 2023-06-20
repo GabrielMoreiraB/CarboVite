@@ -3,6 +3,7 @@
 @import "../../components/styles/variaveis";
 .menu{
     padding: 20px $padding-horizontal;
+    background-color: #2F2F3B;
 }
 
 .logo{
@@ -63,4 +64,18 @@
       font-size: 3rem;
       margin-bottom: 30px;
     }
+  }
+
+  .footer{
+    text-align: center;
+    background-color: #2F2F3B;
+    color: white;
+    padding: .5em;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .footer a{
+    text-decoration: none;
+    color: aqua;
   }

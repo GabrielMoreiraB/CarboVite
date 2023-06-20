@@ -32,8 +32,9 @@ const Cardapio = () => {
                     <Filtros filtro={filtro} setFiltro={setFiltro}/>
                     <Ordenador ordenador ={ordenador} setOrdenador={setOrdenador}/>
                 </div>
-                <Itens/>
+                <Itens busca={busca} filtro={filtro} ordenador={ordenador }/>
             </section>
+            <footer className={styles.footer}>Orgulhosamente desenvolvido por <a target='_blank' href="https://www.linkedin.com/in/gabriel-moreira-b2189416b/">Gabriel Moreira</a></footer>
         </main>
      );
 }

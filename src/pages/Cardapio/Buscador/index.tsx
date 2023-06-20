@@ -17,7 +17,7 @@ const Buscador = ({busca, setBusca}: Props) => {
             placeholder="Buscar"
             type="text"
             value={busca}
-            onChange={(e)=> e.target.value}
+            onChange={(e)=> setBusca(e.target.value)}
             />
             <CgSearch
             size={20}
