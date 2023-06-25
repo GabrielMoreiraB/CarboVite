@@ -11,9 +11,7 @@ const Cardapio = () => {
   const [ordenador, setOrdenador] = useState('');
   return (
     <main>
-      <nav className={styles.menu}>
-        <img src="Logo.png" alt="" className={styles.logo} />
-      </nav>
+
       <header className={styles.header}>
         <div className={styles.header_text}>
           Casa de Massas de Origem Mineira e Coração Italiano

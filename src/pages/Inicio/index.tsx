@@ -6,6 +6,7 @@ const Inicio = () => {
     pratosRecomendados = pratosRecomendados.sort(() => 0.5 - Math.random()).splice(0,3);
     return ( 
         <div>
+
             <h3 className={styles.titulo}>Rcomendações da cozinha</h3>
             <div className={styles.recomendados}>
                 {pratosRecomendados.map(item => (
