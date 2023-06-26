@@ -1,5 +1,6 @@
 import cardapio from '../../data/cardapio.json';
 import styles from './Inicio.module.scss';
+import stylesTema from '../../components/styles/Tema.module.scss'
 
 const Inicio = () => {
     let pratosRecomendados = [...cardapio];
@@ -7,7 +8,7 @@ const Inicio = () => {
     return ( 
         <div>
 
-            <h3 className={styles.titulo}>Rcomendações da cozinha</h3>
+            <h3 className={stylesTema.titulo}>Rcomendações da cozinha</h3>
             <div className={styles.recomendados}>
                 {pratosRecomendados.map(item => (
                     <div key={item.id} className={styles.recomendado}>

@@ -4,21 +4,18 @@ import { useState } from 'react';
 import Filtros from './Filtros';
 import Ordenador from './Ordenador';
 import Itens from './Itens';
+import stylesTema from './../../components/styles/Tema.module.scss'
 
 const Cardapio = () => {
   const [busca, setBusca] = useState('');
   const [filtro, setFiltro] = useState<number | null>(null);
   const [ordenador, setOrdenador] = useState('');
-  return (
-    <main>
 
-      <header className={styles.header}>
-        <div className={styles.header_text}>
-          Casa de Massas de Origem Mineira e Coração Italiano
-        </div>
-      </header>
+  return (
+    <>
+      
       <section className={styles.cardapio}>
-        <h3 className={styles.cardapio_titulo}>Cardápio</h3>
+        <h3 className={stylesTema.titulo}>Cardápio</h3>
         <Buscador busca={busca} setBusca={setBusca} />
 
         <div className={styles.cardapio__filtros}>
@@ -36,7 +33,7 @@ const Cardapio = () => {
           Gabriel Moreira
         </a>
       </footer>
-    </main>
+    </>
   );
 };
 
