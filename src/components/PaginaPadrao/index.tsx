@@ -1,4 +1,5 @@
 import { Outlet } from 'react-router-dom';
+
 import styles from './PaginaPadrao.module.scss';
 import stylesTema from '../../components/styles/Tema.module.scss'
 
@@ -18,3 +19,4 @@ const PaginaPadrao = () => {
 };
 
 export default PaginaPadrao;
+

@@ -1,4 +1,5 @@
 import Menu from './components/Menu';
+
 import Cardapio from './pages/Cardapio'
 import Inicio from './pages/Inicio'
 import PaginaPadrao from './components/PaginaPadrao'

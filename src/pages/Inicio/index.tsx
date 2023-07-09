@@ -9,6 +9,7 @@ const Inicio = () => {
         <div>
 
             <h3 className={stylesTema.titulo}>Recomendações da cozinha</h3>
+
             <div className={styles.recomendados}>
                 {pratosRecomendados.map(item => (
                     <div key={item.id} className={styles.recomendado}>

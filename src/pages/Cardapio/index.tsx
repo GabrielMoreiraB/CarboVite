@@ -4,14 +4,18 @@ import { useState } from 'react';
 import Filtros from './Filtros';
 import Ordenador from './Ordenador';
 import Itens from './Itens';
+
 import stylesTema from '../../components/styles/Tema.module.scss'
+
 
 const Cardapio = () => {
   const [busca, setBusca] = useState('');
   const [filtro, setFiltro] = useState<number | null>(null);
   const [ordenador, setOrdenador] = useState('');
+ 
   return (
-    <main>
+    <>
+
       <section className={styles.cardapio}>
         <h3 className={stylesTema.titulo}>Cardápio</h3>
         <Buscador busca={busca} setBusca={setBusca} />
@@ -31,7 +35,7 @@ const Cardapio = () => {
           Gabriel Moreira
         </a>
       </footer>
-    </main>
+    </>
   );
 };
 
