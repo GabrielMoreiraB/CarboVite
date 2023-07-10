@@ -1,12 +1,9 @@
+import { Prato } from '../../../../types/Prato';
 import styles from './Item.module.scss';
-import cardapio from '../itens.json'
 import classNames from 'classnames';
 
 
-
-type Props = typeof cardapio[0];
-
-const Item = (props : Props) => {
+const Item = (props : Prato) => {
     const {title, size, serving, price, photo, description, category} = props;
     return (
         <div className={styles.item}>
